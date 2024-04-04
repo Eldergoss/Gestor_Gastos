@@ -1,0 +1,11 @@
+{
+    "001": {
+        "presupuesto": 2000,
+        "gastos": {
+            "papel": 120
+        }
+    },
+    "Numero de expediente": "001",
+    "presupuesto": 2200,
+    "gastos": []
+}

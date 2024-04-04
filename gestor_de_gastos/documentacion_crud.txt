@@ -1,0 +1,19 @@
+ Entendido, aquí tienes la documentación específica de los errores encontrados en el proyecto de CRUD que hemos estado trabajando, así como las soluciones asociadas:
+
+1. **IndentationError**:
+   - **Descripción**: Este error ocurrió en la línea 55 de `CRUD_de_Presupuesto.py`, indicando que se esperaba un bloque indentado después de la definición de la función en la línea 54.
+   - **Solución**: Asegurarse de que después de la definición de una función, un bucle o una estructura condicional, haya un bloque de código indentado correctamente.
+
+2. **UnboundLocalError**:
+   - **Descripción**: Este error ocurrió en la función `Editar` de `CRUD_de_Presupuesto.py`, específicamente en la línea donde se verifica si `expediente_num` está en `expediente`. Indica que se intentó acceder a una variable local (`expediente`) donde no estaba asociada con un valor.
+   - **Solución**: Asegurarse de que la variable `expediente` esté definida antes de su uso dentro de la función, o si proviene de una función externa, asegurarse de pasarla como argumento.
+
+3. **FileNotFoundError**:
+   - **Descripción**: Este error puede ocurrir al intentar abrir un archivo que no existe. No se proporcionó un ejemplo específico en este proyecto, pero es un error común al trabajar con archivos.
+   - **Solución**: Verificar que la ruta del archivo sea correcta y que el archivo exista en esa ubicación. También se puede manejar este error utilizando bloques `try-except` para capturar excepciones.
+
+4. **KeyError**:
+   - **Descripción**: Este error ocurre cuando se intenta acceder a una clave que no existe en un diccionario. Puede ocurrir al intentar acceder a un número de expediente que no está presente en el diccionario `expediente`.
+   - **Solución**: Verificar que la clave exista en el diccionario antes de intentar acceder a ella. Se puede usar el método `get()` para acceder a una clave de forma segura y proporcionar un valor predeterminado si la clave no existe.
+
+Estas son las correcciones y soluciones asociadas a los errores específicos que se encontraron en el proyecto de CRUD que hemos estado trabajando. Es importante abordar estos errores para garantizar que el programa funcione correctamente y maneje adecuadamente las diferentes situaciones que puedan surgir durante su ejecución.
